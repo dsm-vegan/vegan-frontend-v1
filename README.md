@@ -1,1 +1,0 @@
-# vegan-front-v1
