@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Member from "./Member";
 
 function Team() {
   return (
@@ -25,10 +24,6 @@ function Team() {
       </Introduction>
       <IntroductionTeam>
         <Subtitle>팀소개</Subtitle>
-        <Member name="조우상" field="Frontend" email="woosang3078@gmail.com" />
-        <Member name="황진성" field="Frontend" email="imhjs2023@gmail.com" />
-        <Member name="김진건" field="Frontend" email="jingeon27@gmail.com" />
-        <Member name="박휘응" field="Backend" email="whee050916@gmail.com" />
       </IntroductionTeam>
     </>
   );
@@ -78,6 +73,9 @@ const Introduction = styled.div`
   height: 200px;
   background-color: #3bd883;
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const Title = styled.p`
@@ -99,9 +97,6 @@ const Contant = styled.p`
 const IntroductionTeam = styled.div`
   width: 100%;
   height: calc(100vh - 320px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const Subtitle = styled.div`
